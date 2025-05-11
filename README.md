@@ -1,9 +1,4 @@
 # ClipNinja ✂️🎬
-
-<p align="center">
-  <img src="./screenshot/clipninja-screenshot.png" alt="ClipNinja Screenshot" width="500"/>
-</p>
-
 <p align="center">
   <b>Extract YouTube Clips in Seconds</b>
 </p>
@@ -34,10 +29,8 @@ ClipNinja is a modern web application that lets you extract specific clips from 
 
 ## 📸 Demo
 
-> _Add your screenshot below (replace the path if needed):_
-
 <p align="center">
-  <img src="./screenshot/clipninja-screenshot.png" alt="App Screenshot" width="600"/>
+  <img src="screenshot/ClipNinja.png" alt="App Screenshot" width="600"/>
 </p>
 
 ---
