@@ -116,9 +116,3 @@ Contributions are welcome! Please open an issue or submit a pull request.
 </p>
 
 ---
-
-### 🖼️ How to add your screenshot
-
-1. Save your screenshot as `clipninja-screenshot.png`.
-2. Place it in the `screenshot/` directory.
-3. The image will automatically show up in the README.
