@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%; /* Dark background */
+    --foreground: 0 0% 98%;   /* Light text */
+
+    --card: 240 4% 14%; /* Darker card background for default cards */
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 262 83% 58%; /* Purple accent: #BB86FC */
+    --primary-foreground: 0 0% 98%; /* Light text on primary */
+
+    --secondary: 240 4% 18%; /* Slightly lighter dark for secondary elements */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 4% 25%; /* Muted dark */
+    --muted-foreground: 0 0% 60%; /* Muted text */
+
+    --accent: 262 70% 68%; /* Lighter purple for hover/accent states */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 72% 51%; /* Updated destructive color for better visibility on dark */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 4% 20%; /* Subtle border */
+    --input: 240 4% 16%; /* Input background */
+    --ring: 262 83% 58%; /* Ring color (purple) */
+
+    --radius: 0.5rem;
+
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 262 83% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    flex-grow: 1;
+  }
+}
+
+@layer utilities {
+  .glassmorphism {
+    @apply bg-card/50 backdrop-blur-lg border border-white/10 shadow-xl;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+}
